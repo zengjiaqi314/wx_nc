@@ -1,0 +1,132 @@
+<!--pages/index/index.wxml-->
+<!-- 轮播图 -->
+<view class="container">
+  <swiper autoplay="{{autoplay}}" duration="{{duration}}">
+    <swiper-item>
+      <image
+        src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/lunbo1.png">
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image 
+        src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/lunbo2.png">
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image 
+        src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/lunbo3.png">
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image 
+        src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/lunbo4.png">
+      </image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 一层导航 -->
+<view class="f ">
+  <view class="f1" data-sort="1" bindtap="tz1">
+    <image 
+      src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/f11.jpg">
+    </image>
+    <view>招牌喜乐</view>
+  </view>
+  <view class="f1" data-sort="2" bindtap="tz1">
+    <image 
+      src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/f12.jpg">
+    </image>
+    <view data-sort="2">星球嚼起</view>
+  </view>
+  <view class="f1" data-sort="3" bindtap="tz1">
+    <image 
+      src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/f13.jpg">
+    </image>
+    <view>草莓系列</view>
+  </view>
+  <view class="f1" data-sort="4" bindtap="tz1">
+    <image 
+      src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/f14.png">
+    </image>
+    <view>魔幻梦游</view>
+  </view>
+</view>
+<!-- 二层导航 -->
+<view class="f">
+  <view class="f2" data-sort="5" bindtap="tz1">
+    <image 
+      src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/f21.png">
+    </image>
+    <view class="f21">惠</view>
+    <view class="f22">
+      <view>
+        <view><h4>折扣</h4></view>
+        <view><h5>超值惊喜</h5></view>
+        <view><h6>立即购买</h6></view>
+      </view>
+      <image 
+        src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/f211.png">
+      </image>
+    </view>
+  </view>
+
+  <view class="f2" data-sort="6" bindtap="tz1">
+    <image 
+      src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/f22.png">
+    </image>
+    <view class="f21">新</view>
+    <view class="f22">
+      <view>
+        <view><h4>新品</h4></view>
+        <view><h5>抢先品尝</h5></view>
+        <view><h6>立即购买</h6></view>
+      </view>
+      <image 
+        src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/f221.png">
+      </image>
+    </view>
+  </view>
+</view>
+<!-- 公告 -->
+<view class="gg1">
+  <view>
+    <image 
+      src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/gg1.png">
+    </image>
+    <text>超值福利 | 全场满50减10</text>
+  </view>
+  <text>立即领取></text>
+</view>
+<!-- 三层列表 -->
+<view class="fz">
+  <view class="ft">*折扣专区*</view>
+  <view class="f">
+    <block wx:for="{{list1}}" wx:key="index">
+      <view class="f3" data-sort="5" data-id="{{item.id}}" bindtap="tz2">
+        <image src="{{item.pic}}">></image>
+        <view class="tbg">10天 20:55:10</view>
+        <view><h1>{{item.title}}</h1></view>
+        <view><h2>每人限抢1份</h2></view>
+        <view>
+          <h3>¥{{item.price}}.00</h3>
+          <h4>¥{{item.price2}}.00</h4>
+        </view>
+        <view><h5>马上抢</h5></view>
+      </view>
+    </block>
+  </view>
+</view>
+<!-- 四层列表 -->
+<view class="fz fd">
+  <view class="ft">*新品专区*</view>
+  <block wx:for="{{list2}}" wx:key="index">
+    <view class="f4" data-sort="6" data-id="{{item.id}}" bindtap="tz2">
+      <image src="{{item.pic}}">></image>
+      <view>
+        <view><h1>新品</h1><h2> {{item.title}}</h2></view>
+        <view><h3>¥{{item.price}}.00</h3></view>
+      </view>
+      <h4>马上抢</h4>
+    </view>
+  </block>
+</view>

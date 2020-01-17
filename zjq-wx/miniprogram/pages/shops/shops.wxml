@@ -1,0 +1,39 @@
+<!--pages/shops/shops.wxml-->
+<view class="head">
+  <image 
+    src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/shopt1.png">
+  </image>
+</view>
+
+<view class="title">
+  <image 
+    src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/shopt2.png">
+  </image>
+  <text>门店一览</text>
+</view>
+
+<view class="f1">
+  <image 
+    src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/shop1.png">
+  </image>
+  <image 
+    src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/shop2.png">
+  </image>
+  <image 
+    src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/shop3.png">
+  </image>
+  <view class="bg">
+    <view><h1>气温14度</h1></view> 
+    <view>街边喜乐铺</view>
+    <view>天凉茶暖一杯接一杯</view>
+    <view>那天我买的单</view>
+    <view>请记得</view>
+    <view>你不欠我一杯茶</view>
+    <view><h2>你欠我一个吻</h2></view>
+    <view class="t1">
+      <image 
+        src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/shop4.png">
+      </image>
+    </view>
+  </view>
+</view>

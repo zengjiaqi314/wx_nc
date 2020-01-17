@@ -1,0 +1,18 @@
+<!--pages/nc_mongodb/nc_mongodb.wxml-->
+<view class="f">
+  <input  placeholder="id" value="{{id}}"></input>
+  <button bindtap="find_shops">填入id</button>
+</view>
+<view>
+  <input bindinput="bindInput" data-item="pic" placeholder="pic" value="{{pic}}"></input>
+  <input bindinput="bindInput" data-item="title" placeholder="title" value="{{title}}"></input>
+  <input bindinput="bindInput" data-item="price" placeholder="price" value="{{price}}"></input>
+  <input bindinput="bindInput" data-item="details" placeholder="details" value="{{details}}"></input>
+  <input bindinput="bindInput" data-item="sort" placeholder="sort" value="{{sort}}"></input>
+  <input bindinput="bindInput" data-item="xl" placeholder="销量" value="{{xl}}"></input>
+  <button bindtap="add_shops">添加商品</button>
+</view>
+<view class="f">
+  <button bindtap="find_shops">获取数据长度</button>
+  <button bindtap="gai_shop">循环修改数据</button>
+</view>

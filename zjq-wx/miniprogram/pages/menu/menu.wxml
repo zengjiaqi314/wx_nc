@@ -1,0 +1,64 @@
+<!--pages/menu/menu.wxml-->
+<view class="fz">
+  <view>______<text>招牌喜乐</text>______</view>
+  <view  class="f">
+    <block wx:for="{{list1}}" wx:key="index">
+      <view data-sort="1" data-id="{{item.id}}" bindtap="tz2">
+        <image src="{{item.pic}}"></image>
+        <view><h1>{{item.title}}</h1></view>
+        <view>
+          <h2>¥{{item.price}}</h2>
+          <h3>销量：{{item.xl}}</h3>
+        </view> 
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class="fz">
+  <view>______<text>星球嚼起</text>______</view>
+  <view  class="f">
+    <block wx:for="{{list2}}" wx:key="index">
+    <view data-sort="2" data-id="{{item.id}}" bindtap="tz2">
+      <image src="{{item.pic}}"></image>
+      <view><h1>{{item.title}}</h1></view>
+        <view>
+          <h2>¥{{item.price}}</h2>
+          <h3>销量：{{item.xl}}</h3>
+        </view> 
+    </view>
+    </block>
+  </view>
+</view>
+
+<view class="fz">
+  <view>______<text>草莓系列</text>______</view>
+  <view  class="f">
+    <block wx:for="{{list3}}" wx:key="index">
+    <view data-sort="3" data-id="{{item.id}}" bindtap="tz2">
+      <image src="{{item.pic}}"></image>
+      <view><h1>{{item.title}}</h1></view>
+        <view>
+          <h2>¥{{item.price}}</h2>
+          <h3>销量：{{item.xl}}</h3>
+        </view>
+    </view>
+    </block>
+  </view>
+</view>
+
+<view class="fz">
+  <view>______<text>魔幻梦游</text>______</view>
+  <view  class="f">
+    <block wx:for="{{list4}}" wx:key="index">
+    <view data-sort="4" data-id="{{item.id}}" bindtap="tz2">
+      <image src="{{item.pic}}"></image>
+      <view><h1>{{item.title}}</h1></view>
+        <view>
+          <h2>¥{{item.price}}</h2>
+          <h3>销量：{{item.xl}}</h3>
+        </view>
+    </view>
+    </block>
+  </view>
+</view>

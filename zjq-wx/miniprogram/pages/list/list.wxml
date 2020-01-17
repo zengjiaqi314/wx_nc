@@ -1,0 +1,25 @@
+<!--pages/list/list.wxml-->
+<view class="lhead">
+  <image 
+    src="cloud://web-1908-zjq-c32x3.7765-web-1908-zjq-c32x3-1300933432/nc/list1.png">
+  </image>
+</view>
+<view class="fz">
+  <view class="ft">{{b}}</view>
+  <block wx:for="{{list}}" wx:key="index">
+    <view class="f" data-sort="{{item.sort}}" data-id="{{item.id}}" bindtap="tz2">
+      <image src="{{item.pic}}">></image>
+      <view>
+        <view>
+          <h1>{{item.title}}</h1>
+          <view class="tbg">{{item.time}}</view>
+        </view>
+        <view>
+          <h2>¥{{item.price}}.00</h2><h5>{{item.price2 ? "¥"+item.price2+".00" : item.price2}}</h5>
+          <view><h3>销量:{{item.xl}}</h3></view>
+        </view>
+      </view>
+      <h4>立即购买</h4>
+    </view>
+  </block>
+</view>

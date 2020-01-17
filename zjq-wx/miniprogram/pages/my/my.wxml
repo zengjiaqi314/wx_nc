@@ -1,0 +1,48 @@
+<!--pages/my/my.wxml-->
+<view class="head">
+  <image src="../../images/mybg1.png"></image>
+  <view  class="f1">
+    <view class="left">
+      <open-data type="userAvatarUrl" class="photo"></open-data>
+      <open-data type="userNickName"></open-data>
+    </view>
+    <view>></view>
+  </view>
+</view>
+
+<view class="f2">
+  <view class="f" bindtap="tz1" data-zt="1">
+    <image src="../../images/mydfk.png"></image>
+    <text>待付款</text>
+  </view>
+  <view class="f" bindtap="tz1" data-zt="2">
+    <image src="../../images/mydfh.png"></image>
+    <text>待发货</text>
+  </view>
+  <view class="f" bindtap="tz1" data-zt="3">
+    <image src="../../images/mydsh.png"></image>
+    <text>待收货</text>
+  </view>
+  <view class="f" bindtap="tz1" data-zt="4">
+    <image src="../../images/mydpj.png"></image>
+    <text>待评价</text>
+  </view>
+</view>
+
+<view class="f3">
+  <view class="f">
+    我的工具
+  </view>
+  <view class="f" bindtap="tz21">
+    <image src="../../images/mygwc.png"></image>
+    <text>购物车</text>
+  </view>
+    <view class="f" bindtap="tz22">
+    <image src="../../images/mydz.png"></image>
+    <text>收货地址</text>
+  </view>
+  <view class="f" bindtap="tz23">
+    <image src="../../images/mytz.png"></image>
+    <text>系统通知</text>
+  </view>
+</view>

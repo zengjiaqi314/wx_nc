@@ -1,0 +1,176 @@
+/* pages/details/details.wxss */
+.dtu image{
+  width: 100%;
+  height: 650rpx;
+}
+.qian{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background: linear-gradient(to right, rgb(255, 113, 0), rgb(255, 172, 12));
+}
+.qian h1{
+  font-size: 60rpx;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 20rpx;
+}
+.qian h2{
+  text-decoration:line-through;
+  font-size: 24rpx;
+  color: #777
+}
+.qian h3{
+  font-size: 30rpx;
+  color: #fff;
+  margin-right: 20rpx;
+}
+.qian h4{
+  font-size: 30rpx;
+}
+.tm{
+  background: #fff;
+  padding: 10rpx;
+}
+.tm h1{
+  font-size: 30rpx;
+  margin: 20rpx;
+}
+.tm h2{
+  font-size: 24rpx;
+  margin: 0rpx 40rpx 0rpx 20rpx;
+  color: #777
+}
+.tm .f1{
+  display: flex;
+  justify-content: space-between;
+}
+.tm image{
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align:bottom;
+}
+.xq{margin-bottom: 200rpx}
+.xq .h1{
+  text-align: center;
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  color: #777
+}
+.xq .h2{
+  background: #fff;
+  padding: 20rpx 40rpx;
+  font-size: 30rpx;
+}
+.xq .h3{
+  background: #fff;
+  padding: 20rpx 40rpx;
+  font-size: 28rpx;
+  color: #777
+}
+.gw{
+  position:fixed;
+  bottom:0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.gwtb{
+  display: flex;
+  width: 10%;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+}
+.gw image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.gw text{
+  font-size: 24rpx;
+  color: #777
+}
+.gwan{
+  width: 75%;
+  display: flex;
+  margin: 10rpx;
+}
+.gwan view{
+  width: 50%;
+  text-align: center;
+  padding: 15rpx;
+  font-size: 34rpx;
+  font-weight: 400;
+  color: #fff
+}
+.gwan .h1{
+  background: #f90
+}
+.gwan .h2{
+  background: #f30
+}
+.tc{
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  height: 60%;
+}
+.dd1{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -50rpx;left: 20rpx;
+}
+.dd1 image{
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 20rpx;
+}
+.dd1>view>view{
+  font-size: 40rpx;
+  font-weight: 400;
+  color: #f30;
+}
+.dd1>view>text{
+  font-size: 24rpx;
+  color: #777;
+}
+.dd2{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1rpx solid #f6f6f6; 
+  padding: 20rpx;
+}
+.dd2 view{
+  font-size: 30rpx;
+}
+.num1{
+  display: flex
+}
+.num1 text{
+  width: 50rpx;
+  height: 50rpx;
+  font-size: 30rpx;
+  margin: 0 10rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 5rpx;
+  background: #eee;
+}
+.dd3{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20rpx 0;
+  color: #fff;
+  font-weight: 400
+}
+.a{background: #f90;}
+.b{background: #f30;}

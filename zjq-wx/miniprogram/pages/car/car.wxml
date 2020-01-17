@@ -1,0 +1,86 @@
+<!--pages/car/car.wxml-->
+<view class="f" bindtap="open">
+  <view>
+    <image src="../../images/sc.png"></image>
+  </view>
+  <view><text>删除</text></view>
+</view>
+
+<picker bindchange="dz" value="{{index1}}" range="{{dzlist}}">
+  <view class="f" wx:if="{{show1}}">
+    <view>
+      <image src="../../images/mydz.png"></image>
+      <h1 wx:if="{{index1==''}}">暂无地址,请点击选择地址</h1>
+      <h1>{{dzlist[index1]}}</h1>
+    </view>
+    <image src="../../images/xiangxia.png"></image>
+  </view>
+</picker>
+
+<van-tabs bind:click="onClick" color="#f70" line-height="3rpx">
+  <van-tab title="到店取货" ></van-tab>
+  <van-tab title="送货上门"></van-tab>
+</van-tabs>
+
+
+<!-- 购物车商品 -->
+<view class="f1">
+  <block wx:for="{{list}}" wx:key="index">
+    <view class="f">
+      <view class="left">
+        <checkbox-group bindchange="check" data-index="{{index}}">
+          <checkbox value="{{item._id}}" checked="{{item.cb}}"></checkbox>
+        </checkbox-group>
+        <image src="{{item.pic}}"></image>
+        <view class="leftz">
+          <view><h4 wx:if="{{item.sort==5}}">惠</h4>{{item.title}}</view>
+          <h2>¥{{item.price}}.00</h2>
+        </view>
+      </view>
+      <view class="right">
+        <h3 bindtap="jian"
+          data-id="{{item._id}}"
+          data-num="{{item.num}}"
+          data-index="{{index}}"
+        >-</h3>
+        <h3>{{item.num}}</h3>
+        <h3 bindtap="jia"
+          data-id="{{item._id}}"
+          data-num="{{item.num}}"
+          data-sort="{{item.sort}}"
+          data-index="{{index}}"
+        >+</h3>
+      </view>
+    </view> 
+  </block>
+</view>
+<!-- 底部结算 -->
+<view class="js" wx:if="{{show2}}">
+  <view>
+    <checkbox-group bindchange="qx">
+      <checkbox value="quanxuan" checked="{{qxcb}}"></checkbox>
+    </checkbox-group>
+    <text>全选</text>
+  </view>
+  <view>
+    <h5>¥{{qian}}.00</h5>
+    <h6 bindtap="zf">结算</h6>
+  </view>
+</view>
+<!-- 是否删除弹框 -->
+<van-popup show="{{ show3 }}" bindtap="onClose">
+  <view class="tk1">是否删除该商品</view>
+  <view class="tk2">
+    <button bindtap="onClose" class="btn1">否</button>
+    <button bindtap="sc" class="btn2">是</button>
+  </view>
+</van-popup>
+
+<van-popup show="{{ show4 }}" bindtap="onClose">
+  <view class="tk1">是否删除选中商品</view>
+  <view class="tk2">
+    <button bindtap="onClose" class="btn1">否</button>
+    <button bindtap="szsc" class="btn2">删除</button>
+  </view>
+</van-popup>
+

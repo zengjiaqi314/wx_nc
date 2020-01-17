@@ -1,0 +1,74 @@
+<!--pages/details/details.wxml-->
+<view class="dtu">
+  <image src="{{list[0].pic}}"></image>
+</view>
+
+<view class="qian">
+  <view>
+    <h1>¥{{list[0].price}}.00</h1>
+    <h2>{{list[0].price2 ? list[0].price2+".00" : list[0].price2}}</h2>
+  </view>
+  <view>
+    <h3>{{list[0].time2}}</h3>
+    <h4>{{list[0].time}}</h4>
+  </view>
+</view>
+
+<view class="tm">
+  <view>
+    <h1>{{list[0].title}}</h1>
+  </view>
+  <view>
+    <h2>运费:包邮</h2>
+    <h2>库存:496</h2>
+  </view>
+  <view class="f1">
+    <h2>取货方式</h2>
+    <h2>
+      <image src="../../images/dui.png"></image>
+      快递/到店
+    </h2>
+  </view>
+</view>
+
+<view class="xq">
+  <view class="h1">** 详情 **</view>
+  <view class="h2">产品详情</view>
+  <view class="h3">{{list[0].details}}</view>
+</view>
+
+<view class="gw">
+  <view class="gwtb">
+    <image src="../../images/mydpj.png"></image>
+    <text>客服</text>
+  </view>
+  <view class="gwtb" bindtap="tz">
+    <image src="../../images/mygwc.png"></image>
+    <text>购物车</text>
+  </view>
+  <view class="gwan">
+    <view class="h1" bindtap="show1">加入购物车</view>
+    <view class="h2" bindtap="show2">立即购买</view>
+  </view>
+</view>
+
+<van-overlay show="{{ show }}" bindtap="onClose"/>
+<view wx:if="{{show}}" class="tc"> 
+  <view class="dd1">
+    <image src="{{list[0].pic}}"></image>
+    <view>
+      <view>¥{{list[0].price}}</view>
+      <text>库存 496</text>
+    </view>
+  </view>
+  <view class="dd2">
+    <view>购买数量{{list[0].xg}}</view>
+    <view class="num1">
+      <text bindtap="jian"> -</text>
+      <text>{{num}}</text>
+      <text bindtap="jia">+</text>
+    </view>
+  </view>
+  <view class="dd3 a" wx:if="{{show2}}" bindtap="jumpcart">加入购物车</view>
+  <view class="dd3 b" wx:if="{{show3}}" bindtap="ljgm">立即购买</view>
+</view>

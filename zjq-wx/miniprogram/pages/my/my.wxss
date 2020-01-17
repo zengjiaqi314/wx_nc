@@ -1,0 +1,46 @@
+/* pages/my/my.wxss */
+.head>image{
+  width: 100%;
+  height: 340rpx;
+}
+.head{
+  position:relative;
+}
+.f1{
+  display: flex;
+  align-items:center;
+  position:absolute;
+  top: 120rpx;left: 70rpx;
+}
+.f1 .left{
+  width: 580rpx;
+  font-size: 30rpx;
+  color: #555;
+  display: flex;
+  align-items:center;
+}
+.photo{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 50rpx;
+}
+
+.f{
+  display: flex;
+  align-items:center;
+  background: #fff;
+  font-size: 30rpx;
+  color: #555;
+  padding: 35rpx 50rpx;
+  margin-bottom: 2rpx;
+}
+.f image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.f3{
+  margin-top: 8rpx;
+}

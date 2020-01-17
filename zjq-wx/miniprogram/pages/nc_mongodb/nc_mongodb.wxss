@@ -1,0 +1,18 @@
+/* pages/nc_mongodb/nc_mongodb.wxss */
+.f{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end
+}
+input{
+  border: 1rpx solid #000;
+  padding: 0 10rpx;
+  margin-bottom: 10rpx;
+}
+.f button{
+  width: 250rpx;
+  min-height: 15px;
+  padding: 0;
+  margin-bottom: 10rpx;
+}
+button{border: 1rpx solid #000}

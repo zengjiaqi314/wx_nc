@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/shops/shops",
+    "pages/my/my",
+    "pages/list/list",
+    "pages/details/details",
+    "pages/car/car",
+    "pages/dz/dz",
+    "pages/tz/tz",
+    "pages/zf/zf",
+    "pages/zt/zt",
+    "pages/nc_mongodb/nc_mongodb"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "喜乐茶",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ffcb57",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "喜乐",
+        "iconPath": "images/dh12.png",
+        "selectedIconPath": "images/dh11.png"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "菜单",
+        "iconPath": "images/dh22.png",
+        "selectedIconPath": "images/dh21.png"
+      },
+      {
+        "pagePath": "pages/shops/shops",
+        "text": "茶铺",
+        "iconPath": "images/dh32.png",
+        "selectedIconPath": "images/dh31.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/dh42.png",
+        "selectedIconPath": "images/dh41.png"
+      }
+    ]
+  }
+}

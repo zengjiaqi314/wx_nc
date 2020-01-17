@@ -1,0 +1,176 @@
+/* pages/index/index.wxss */
+.container{
+  /*父元素外围边框*/
+  
+}
+.container swiper{
+  /*轮播图总元素*/
+  width:100%;
+}
+.container image{
+  /*宽度与父元素相同*/
+  width:100%;
+  height: 100%;
+}
+.f{
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 20rpx;
+}
+.f1 image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.f1 view{
+  text-align: center;
+  font-size: 30rpx
+}
+.f2{position:relative;}
+.f2>image{
+  width: 340rpx;
+  height: 200rpx; 
+}
+.f21{
+  position:absolute;
+  top: 0rpx;right: 5rpx;
+  font-size: 28rpx
+}
+.f22{
+  display: flex;
+  width: 320rpx;
+  justify-content: space-around;
+  position:absolute;
+  top: 40rpx;left: 20rpx;
+}
+.f22 image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.f22 h4{
+  font-weight:700;
+  font-size: 30rpx
+}
+.f22 h5{
+  color: #555;
+  font-size: 28rpx;
+}
+.f22 h6{
+  background: #f30;
+  color: #fff;
+  font-size: 28rpx;
+  font-weight:400;
+  padding: 0 10rpx;
+}
+.gg1{
+  display: flex;
+  justify-content: space-between;
+  padding:10rpx 20rpx;
+  margin:20rpx;
+  background: #f30;
+  border-radius: 10rpx;
+}
+.gg1 image{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align:top;
+  margin-right:20rpx;
+}
+.gg1 text{
+  color: #ddd;
+}
+.gg1>view>text{
+  font-weight:700;
+  font-size: 30rpx
+}
+.gg1>text{
+  font-weight:400;
+  font-size: 28rpx;
+}
+.fz{
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.ft{
+  text-align: center;
+  font-weight:700;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.f3{
+  position:relative;
+  text-align: center
+}
+.f3 image{
+  width: 350rpx;
+  height: 350rpx;
+}
+.tbg{
+  width: 340rpx;
+  line-height: 40rpx;
+  position:absolute;
+  top: 310rpx;left: 0rpx;
+  background: #f23;
+  font-size: 30rpx;
+  font-weight:400;
+  color: #ddd
+}
+.f3 h1,.f4 h2{
+  font-size: 30rpx;
+  font-weight:400;
+  color: #555
+}
+.f3 h2{
+  font-size: 26rpx;
+  color: #777
+}
+.f3 h3,.f4 h3{
+  font-size: 32rpx;
+  font-weight:700;
+  color: #f23
+}
+.f3 h4{
+  text-decoration:line-through;
+  font-size: 24rpx;
+  color: #777
+}
+.f3 h5{
+  background: #f23;
+  font-size: 32rpx;
+  font-weight:400;
+  color: #ddd;
+  padding: 0 80rpx;
+  border-radius: 6rpx;
+}
+.f4{
+  display: flex;
+  align-items:flex-end;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.f4 image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.f4>view>view{
+  width: 350rpx;
+  margin: 40rpx 0;
+}
+.f4 h1{
+  box-sizing:border-box;
+  border: 1rpx solid #f30;
+  font-size: 20rpx;
+  color: #f30
+}
+.f4 h4{
+  margin: 40rpx 0;
+  font-size: 32rpx;
+  font-weight:400;
+  color: #ddd;
+  background: #f73;
+  border-radius: 25rpx;
+  padding: 5rpx 20rpx
+}
+.fd{margin-bottom: 300rpx}
