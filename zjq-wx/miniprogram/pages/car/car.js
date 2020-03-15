@@ -1,3 +1,4 @@
+// 同步测试
 // pages/car/car.js
 const db = wx.cloud.database();
 Page({
